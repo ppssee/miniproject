@@ -1,0 +1,107 @@
+	<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 수정</title>
+  <link rel="stylesheet" href="/miniproject/resources/css/template.css">
+  
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+</head>
+
+
+<body>
+  <div id="container">
+    <header>
+      <div>
+        <a href="/index.html">
+          <img src="/miniproject/resources/img/indexImg/header.jpg" alt="headerImg">
+        </a>
+      </div>
+      <nav id="topInfo">
+        <ul>
+          <li><a href="/login.html">로그인</a></li>
+          <li><a href="/signUp.html">회원가입</a></li>
+          <li><a href="/cart.html">장바구니</a></li>
+        </ul>
+      </nav>
+      <nav id="topMenu">
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/menu.html">MENU</a></li>
+          <li><a href="/location.html">LOCATION</a></li>
+          <li><a href="/notice.html">NOTICE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <main id="main1">
+    <h2>상품수정</h2>
+      <form action="/miniproject/product/update.kh" method="post">
+      <table>
+        <colgroup>
+          <col style="width: 20%">
+          <col style="width: 80%">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>상품 이름  <img src="/miniproject/resources/img/singUpImg/ico_required.gif" width="10px"></td>
+            <td><input type="text" id="product-name" name="product-name"></td>
+          </tr>
+          <tr>
+            <td>상품 가격  <img src="/miniproject/resources/img/singUpImg/ico_required.gif" width="10px"></td>
+            <td><input type="text" id="product-price" name="product-price"></td>
+          </tr>
+          <tr>
+            <td>상품 수량  <img src="/miniproject/resources/img/singUpImg/ico_required.gif" width="10px"></td>
+            <td><input type="text" id="product-count" name="product-count"></td>
+          </tr>
+          <tr>
+            <td id ="tfoot-submit">
+              <input type="submit" value="수정" class="btn btn-primary">
+            </td>
+            <td id ="tfoot-submit">
+              <input type="reset" value="초기화" class="btn btn-warning">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </form>
+    
+    </main>
+    
+    
+    <footer>
+      <div id="footer-top">
+        <div id="footer-top-div1">
+          <ul>
+            <li><a href="">회사소개</a></li>
+            <li><a href="">매장안내</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <div id="footer-top-div2">
+          <div>
+            <a href=""><img src="/miniproject/img/indexImg/facebookImg.png" alt=""></a>
+            <a href=""><img src="/miniproject/img/indexImg/instaImg.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <p id="web-font">대표: 박상은 법인명: 상은당 주식회사 전화: 010-1234-5678 E-mail: ppssee222@gmail.com <br>
+          주소: 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F, 3F 개인정보책임자: 박상은 (ppssee222@gmail.com) <br>
+          사업자등록번호: 301-80-49599 통신판매신고: 제2015-서울중구-0015호</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

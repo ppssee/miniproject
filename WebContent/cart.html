@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/miniproject/resources/css/cart.css?after">
+</head>
+<body>
+  <div id="container">
+   <header>
+      <div>
+        <a href="/miniproject/index2.html">
+          <img src="/miniproject/resources/img/indexImg/header.jpg" alt="headerImg">
+        </a>
+      </div>
+      <nav id="topInfo">
+        <ul>
+          <li><a href="/miniproject/index.jsp">로그인</a></li>
+          <li><a href="member/enrollView.kh">회원가입</a></li>
+          <li><a href="/miniproject/cart.html">장바구니</a></li>
+        </ul>
+      </nav>
+      <nav id="topMenu">
+        <ul>
+          <li><a href="/miniproject/index2.html">HOME</a></li>
+          <li><a href="/miniproject/menu.html">MENU</a></li>
+          <li><a href="/miniproject/location.html">LOCATION</a></li>
+          <li><a href="/miniproject/notice.html">NOTICE</a></li>
+        </ul>
+      </nav>
+	</header>
+
+    <table style="border: 1px solid black;"></table>
+    <main>
+      <div id="div1">
+        <h1>
+          <img src="/miniproject/resources/img/cartImg/ico_order_cart.png" style="margin: 14px 12px; float: left;">
+          장바구니
+        </h1>
+        <ul>
+          <li>
+            <span class="div1-span">01</span> 장바구니
+          </li>
+          <li>
+            <span class="div1-span">02</span> 주문작성/결제
+          </li>
+          <li>
+            <span class="div1-span">03</span> 주문완료
+          </li>
+        </ul>
+      </div>
+      <h2>내가 담은 상품리스트</h2>
+      <form action="" method="">
+      <table style="width: 100%; font-size: 15px; border: 0; border-spacing: 0; line-height: 18px; table-layout: fixed; word-wrap: break-word;">
+        <colgroup style="display: table-column-group;">
+          <col style="width: 4%;">
+          <col>
+          <col style="width: 9%;">
+          <col style="width: 6%;">
+          <col style="width: 9%;">
+          <col style="width: 9%;">
+          <col style="width: 13%;">
+          <col style="width: 9%;">
+        </colgroup>
+        <thead style="display: table-header-group; vertical-align: middle; border-color: inherit;">
+          <tr style="display: table-row;">
+            <th></th>
+            <th>상품명</th>
+            <th>배송수단</th>
+            <th>수량</th>
+            <th>상품가</th>
+            <th>주문금액</th>
+            <th>배송비</th>
+            <th>주문</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td class="tbody-td">
+              <div>
+                <a href="/miniproejct/resources/img/menuImg/bread3.png" style="float: left; color: #2e2e2e;">
+                  <img src="/miniproject/resources/img/menuImg/bread3.png" style="width: 100px; vertical-align: middle;">
+                </a>
+                <div style="padding-left: 140px;">
+                  <a href="" style="color: #000; font-size: 18px; line-height: 100px; font-weight: bold;">튀김소보루</a>
+                </div>
+              </div>
+            </td>
+            <td>택배</td>
+            <td><input type="text" class="inputCount" name="" value="0"></td>
+            <td>1,700원</td>
+            <td>0원</td>
+            <td>3,000원</td>
+            <td><span class="btn_delete_span" onclick="">삭제</span></td>
+          </tr>
+        </tbody>
+      </table>
+      </form>
+      <div class="btn-deleteAll">
+        <a href="">모두삭제</a>
+      </div>
+      <div id="cartBottom">
+        <ul>
+          <li style="z-index: 15;">
+            <div class="top">
+              <dl style="display: block;">
+                <dt>주문금액</dt>
+                <dd><span>0원</span></dd>
+              </dl>
+            </div>
+            <div class="bottom">
+              <dl>
+                <dt>상품금액</dt>
+                <dd><span>0원</span></dd>
+              </dl>
+              <dl>
+                <dt>선결제배송비</dt>
+                <dd><span>3,000원</span></dd>
+              </dl>
+            </div>
+            <span class="icon"><img src="/miniproject/resources/img/cartImg/ico_total_minus.png" alt=""></span>
+          </li>							 
+          <li style="z-index: 10;">
+            <div class="top">
+              <dl>
+                <dt>할인금액</dt>
+                <dd><span>0원</span></dd>
+              </dl>
+            </div>
+            <span class="icon"><img src="/miniproject/resources/img/cartImg/ico_total_sum.png" alt=""></span>
+          </li>
+          <li class="sum" style="z-index: 5;">
+            <div class="top">
+              <dl>
+                <dt>결제예정금액</dt>
+                <dd><span>3,000원</span></dd>
+              </dl>
+            </div>
+            <div class="bottom2">
+              <dl>
+                <dt>적립혜택</dt>
+                <dd></dd>
+              </dl>
+              <dl>
+                <dt>포인트적립</dt>
+                <dd>
+                  <span>0</span>
+                  <span class="icon_point">P</span>
+                </dd>
+              </dl>
+
+
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="btn_board">
+        <a href="">전체주문</a>
+        <a href="">선택상품주문</a>
+      </div>
+    </main>
+
+
+    <footer>
+      <div id="footer-top">
+        <div id="footer-top-div1">
+          <ul>
+            <li><a href="">회사소개</a></li>
+            <li><a href="">매장안내</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <div id="footer-top-div2">
+          <div>
+            <a href=""><img src="/miniproejct/resources/img/indexImg/facebookImg.png" alt=""></a>
+            <a href=""><img src="/miniproejct/resources/img/indexImg/instaImg.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <p id="web-font">대표: 박상은 법인명: 상은당 주식회사 전화: 010-1234-5678 E-mail: ppssee222@gmail.com <br>
+          주소: 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F, 3F 개인정보책임자: 박상은 (ppssee222@gmail.com) <br>
+          사업자등록번호: 301-80-49599 통신판매신고: 제2015-서울중구-0015호</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

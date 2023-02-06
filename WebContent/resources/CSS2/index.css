@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+*{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  list-style: none;
+}
+#container{
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+}
+header {
+  width: 100%;
+}
+  header img{
+    width: 100%;
+  }
+  #topInfo{    /* 로그인, 회원가입, 장바구니 nav*/
+    width: 100%;
+    height: 30px;
+    line-height: 20px;
+    border-bottom: 1px solid #ced1d6;
+    display: flex;
+    justify-content: flex-end;
+  }
+    #topInfo li{
+        float: left;
+        padding: 0px 20px;
+    }
+    #topInfo a {
+        color: gray;
+        font-size: 11px;
+        padding-left: 30px; 
+        border-left: 1px solid #ddd;
+    }
+    #topInfo a:hover{
+      color: rgb(86, 51, 32);
+      font-size: 11px;
+    }
+  #topMenu{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #topMenu ul{
+    width: 100%;
+    padding-left: 100px;
+  }
+  #topMenu li{
+    float: left;
+    padding: 0 50px;
+  }
+  #topMenu a {
+    color: gray;
+    font-size: 15px; 
+    font-weight: 700;
+  }
+  #topMenu a:hover{
+    color: rgb(86, 51, 32);
+    font-size: 15px;
+  }
+
+/* 메인 */
+.slides {
+  padding: 0;
+  width: 80%;
+  height: 620px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 620px;
+  display: block;
+  position: absolute;
+  transform: scale(0);
+
+  transition: all .7s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav label {
+  width: 200px;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+
+  transition: opacity .2s;
+
+  color: #FFF;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 550px;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+.nav label:hover { opacity: 1; }
+.nav .next { right: 0; }
+input:checked + .slide-container  .slide {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+width: 100%;
+bottom: 9px;
+height: 11px;
+display: block;
+position: absolute;
+text-align: center;
+}
+
+.nav-dots .nav-dot {
+top: -5px;
+width: 11px;
+height: 11px;
+margin: 0 4px;
+position: relative;
+border-radius: 100%;
+display: inline-block;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3{
+background: rgba(0, 0, 0, 0.8);
+}
+
+/* 푸터 */
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: rgb(86, 51, 32);
+}
+  #footer-top{
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid #ddd;
+  }
+    #footer-top-div1{
+      width: 80%;
+      height: 100%;
+      float: left;
+    }
+    #footer-top ul {
+      margin-left: 50px;
+    }
+    #footer-top li {
+      float: left;
+    }
+    #footer-top li a {
+      border-right: 1px solid #ddd;
+      padding: 0px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+      line-height: 65px;
+    }
+
+    #footer-top-div2{
+      width: 20%;
+      height: 100%;
+      float: right;
+      padding-top: 13px;
+    }
+    #footer-top-div2 div{
+      width: 70%; 
+      height: 100%;
+      margin-right: 30%;
+    }
+    #footer-top-div2 a{
+      float: right;
+    }
+    #footer-top-div2 img{
+      width: 40px;
+      margin-right: 10px;
+    }
+
+  #footer-bottom{
+    width: 100%;
+    height: 150px;
+    padding-top: 25px;
+  }
+  #footer-bottom p{
+    color: white;
+    padding: 0 65px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+  }

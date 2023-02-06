@@ -1,0 +1,212 @@
+*{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  list-style: none;
+}
+#container{
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+}
+header {
+  width: 100%;
+}
+  header img{
+    width: 100%;
+  }
+  #topInfo{    /* 로그인, 회원가입, 장바구니 nav*/
+    width: 100%;
+    height: 30px;
+    line-height: 20px;
+    border-bottom: 1px solid #ced1d6;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+  }
+    #topInfo li{
+        float: left;
+        padding: 0px 20px;
+    }
+    #topInfo a {
+        color: gray;
+        font-size: 11px;
+        padding-left: 30px; 
+        border-left: 1px solid #ddd;
+    }
+    #topInfo a:hover{
+      color: rgb(86, 51, 32);
+      font-size: 11px;
+    }
+  #topMenu{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #topMenu ul{
+    width: 100%;
+    padding-left: 100px;
+  }
+  #topMenu li{
+    float: left;
+    padding: 0 50px;
+  }
+  #topMenu a {
+    color: gray;
+    font-size: 15px; 
+    font-weight: 700;
+  }
+  #topMenu a:hover{
+    color: rgb(86, 51, 32);
+    font-size: 15px;
+  }
+
+/* 메인 */
+
+main{
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+  main h2{
+    font-size: 26px;
+    text-align: center; 
+    font-weight: bold;
+    line-height: 3;
+    color: #2e2e2e
+  }
+  form{
+    width: 100%;
+  }
+  table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  tbody tr{
+    height: 80px;
+  }
+  tbody th, td{
+    text-align: left;
+    font-size: 18px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 600;
+    color: #5f5f5f;
+  }
+  tbody input{
+    border: 1px solid #d5d5d5;
+    margin-right: 10px;
+    padding-left: 15px;
+    font-size: 100%;
+    width: 350px;
+    height: 40px;
+    float: left;
+  } 
+  tfoot tr{
+    margin-top: 10px;
+  }
+  .tfoot-td{
+    height: 210px;
+    margin: 10px;
+    padding: 30px;
+  }
+  .tfoot-td h4{
+    font-weight: 600;
+  }
+  .tfoot-td textarea{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .tfoot-td span{
+    font-size: 13px;
+  }
+  #tfoot-submit{
+    padding-top: 100px;
+    border: 0px; 
+    text-align: center;
+  }
+  #tfoot-submit input{
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 16px 0 rgb(0 0 0 / 30%);
+    width: 250px;
+    height: 80px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+
+/* 푸터 */
+
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: rgb(86, 51, 32);
+}
+  #footer-top{
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid #ddd;
+  }
+    #footer-top-div1{
+      width: 80%;
+      height: 100%;
+      float: left;
+    }
+    #footer-top ul {
+      margin-left: 50px;
+    }
+    #footer-top li {
+      float: left;
+    }
+    #footer-top li a {
+      border-right: 1px solid #ddd;
+      padding: 0px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+      line-height: 65px;
+    }
+
+    #footer-top-div2{
+      width: 20%;
+      height: 100%;
+      float: right;
+      padding-top: 13px;
+    }
+    #footer-top-div2 div{
+      width: 70%; 
+      height: 100%;
+      margin-right: 30%;
+    }
+    #footer-top-div2 a{
+      float: right;
+    }
+    #footer-top-div2 img{
+      width: 40px;
+      margin-right: 10px;
+    }
+
+  #footer-bottom{
+    width: 100%;
+    height: 150px;
+    padding-top: 25px;
+  }
+  #footer-bottom p{
+    color: white;
+    padding: 0 65px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+  }
